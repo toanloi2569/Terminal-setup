@@ -70,7 +70,7 @@ git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ${Z
 ```
 
 ### Fast-Syntax-Highlighting
-[Fast-syntax-highlighting] is a plugin that enables fast syntax highlighting in Zsh. To install the plugin, run the following commands:
+[Fast-syntax-highlighting](https://github.com/zdharma-continuum/fast-syntax-highlighting) is a plugin that enables fast syntax highlighting in Zsh. To install the plugin, run the following commands:
 
 ```bash
 git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git ${ZSH_CUSTOM}/plugins/fast-syntax-highlighting
