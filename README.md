@@ -27,6 +27,9 @@ This repository is mostly taken from [terminal-setup](https://github.com/vimicha
 - **Zoxide** - A smart cd command that tracks your most used directories  
   [GitHub Repo](https://github.com/ajeetdsouza/zoxide)
 
+### Fun Stuff
+- **Neofetch** - A command-line system information tool  
+  [GitHub Repo](https://github.com/dylanaraps/neofetch) 
 ---
 
 Feel free to explore and adapt any of these configurations or tools for your own terminal setup! 😎

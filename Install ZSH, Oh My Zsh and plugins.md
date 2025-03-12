@@ -75,3 +75,37 @@ git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ${Z
 ```bash
 git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git ${ZSH_CUSTOM}/plugins/fast-syntax-highlighting
 ```
+
+## Additional Plugins
+
+### Poetry
+[Poetry](https://python-poetry.org/docs/) is a dependency management and packaging tool for Python. To install the Poetry plugin, run the following commands:
+
+To install the plugin, install poetry by pipx:
+
+```bash
+sudo apt update
+sudo apt install pipx
+pipx ensurepath
+
+pipx install poetry
+```
+
+Add poetry plugin:
+
+```bash
+mkdir $ZSH_CUSTOM/plugins/poetry
+poetry completions zsh > $ZSH_CUSTOM/plugins/poetry/_poetry
+```
+
+### Kube-ps1
+[kube-ps1](https://github.com/jonmosco/kube-ps1) A script that lets you add the current Kubernetes context and namespace configured on kubectl to your Bash/Zsh prompt strings (i.e. the $PS1).  
+
+kube-ps1 is included as a plugin in the oh-my-zsh project. To enable it, edit your ~/.zshrc and add the plugin:
+
+```vim
+plugins=(
+  kube-ps1
+)
+PROMPT='$(kube_ps1)'$PROMPT # or RPROMPT='$(kube_ps1)'
+```
